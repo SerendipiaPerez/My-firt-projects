@@ -1,0 +1,9 @@
+number = 8
+
+input_guess = 0
+
+while input_guess < 3:
+    guess = input("Guess ")
+    if int(guess) == number:
+        print("well done!")
+    input_guess += 1
