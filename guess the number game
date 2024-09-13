@@ -1,4 +1,8 @@
-number = 8
+import random
+
+number_list = [1,2,3,4,5]
+
+number = random.choice(number_list)
 
 input_guess = 0
 
@@ -6,4 +10,7 @@ while input_guess < 3:
     guess = input("Guess ")
     if int(guess) == number:
         print("well done!")
+        input_guess += 3
     input_guess += 1
+else:
+    print("game over!")
